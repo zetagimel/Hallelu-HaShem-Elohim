@@ -11,7 +11,7 @@ export function Footer() {
             <p>Analytics powered by Tradyxa Analytics Engine v1.0.0</p>
           </div>
           <div className="space-y-1 md:text-right">
-            <p>Market data © respective owners. Tradyxa Quant Dashboard is unaffiliated with NSE or Yahoo.</p>
+            <p>Market data © respective owners. Tradyxa Aztryx is unaffiliated with NSE or Yahoo.</p>
             <p>Market data may be delayed up to 30 minutes. For educational use only.</p>
           </div>
         </div>
@@ -26,7 +26,7 @@ export function Footer() {
         <div className="text-center text-[10px] text-muted-foreground/60 space-y-1">
           <p>zetaaztratech@gmail.com | Jurisdiction: Chennai, Tamil Nadu | Version: v1.0.0</p>
           <p>Visual models and code protected under Copyright Act, 1957 (India). Unauthorized use of the Tradyxa or Zeta Aztra name, logo, or visuals is strictly prohibited.</p>
-          <p>Tradyxa Quant Dashboard is a product of Zeta Aztra Technologies (India) and is not affiliated with any other Tradyxa-named companies or domains.</p>
+          <p>Tradyxa Aztryx is a product of Zeta Aztra Technologies (India) and is not affiliated with any other Tradyxa-named companies or domains.</p>
         </div>
 
         <div className="flex justify-center gap-4 text-xs text-muted-foreground pt-2">
