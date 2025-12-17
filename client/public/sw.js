@@ -1,4 +1,5 @@
-const CACHE_VERSION = 'v2-aztryx';
+const CACHE_VERSION = 'v3-aztryx';
+
 const CACHE_NAME = `aztryx-${CACHE_VERSION}`;
 
 // Assets to cache on install

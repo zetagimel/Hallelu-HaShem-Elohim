@@ -193,7 +193,7 @@ export default function Dashboard() {
     },
   });
 
-// Smartlink removed
+  // Smartlink removed
 
   const handleRefresh = useCallback(async () => {
     // Smartlink removed
@@ -450,7 +450,15 @@ export default function Dashboard() {
             </div>
 
             <div className="mt-4 sm:mt-6 mb-4 sm:mb-6">
-              {/* Adsterra 320x50 Banner removed */}
+              {/* A-Ads Banner (Above Verdict) */}
+              <div id="frame-verdict" style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 99998 }}>
+                <iframe
+                  data-aa='2420998'
+                  src='//acceptable.a-ads.com/2420998/?size=Adaptive'
+                  style={{ border: 0, padding: 0, width: '70%', height: 'auto', overflow: 'hidden', display: 'block', margin: 'auto' }}
+                ></iframe>
+              </div>
+
 
               <VerdictTile
                 ticker={selectedTicker}
@@ -468,7 +476,7 @@ export default function Dashboard() {
                 onLearnMore={(key) => {
                   openExplain(key);
                 }}
-                // Smartlink removed from tile click
+              // Smartlink removed from tile click
               />
               {/* Adsterra Native Banner removed */}
             </div>
@@ -477,6 +485,15 @@ export default function Dashboard() {
               <OtherProductsTile />
             </div>
           </main>
+
+          {/* A-Ads Banner (Above Footer) */}
+          <div id="frame-footer" style={{ width: '100%', margin: 'auto', position: 'relative', zIndex: 99998, paddingBottom: '20px' }}>
+            <iframe
+              data-aa='2420997'
+              src='//acceptable.a-ads.com/2420997/?size=Adaptive'
+              style={{ border: 0, padding: 0, width: '70%', height: 'auto', overflow: 'hidden', display: 'block', margin: 'auto' }}
+            ></iframe>
+          </div>
 
           <Footer />
         </div>
