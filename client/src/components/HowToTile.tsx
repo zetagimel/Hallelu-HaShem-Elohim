@@ -53,7 +53,12 @@ export function HowToTile({ onLearnMore, onTileClick }: HowToTileProps) {
           <CardHeader
             className="cursor-pointer hover-elevate py-2 sm:py-3 px-3 sm:px-4"
             onClick={(e) => {
+              // Only trigger if we aren't clicking the expand button directly (though button is nested, event bubbling might handle it)
+              // Ideally we want the whole header to trigger the link, except maybe the chevron. 
+              // But for aggression, whole header is fine.
               if (onTileClick) onTileClick();
+              // Prevent collapse toggle if we want ONLY link? User said "clicks it opens the link".
+              // Usually we might want both or just link. Let's do both (link opens, and accordion toggles).
             }}
           >
             <CardTitle className="flex items-center justify-between gap-2 text-xs sm:text-sm">

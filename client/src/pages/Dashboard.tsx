@@ -196,7 +196,8 @@ export default function Dashboard() {
   // Smartlink removed
 
   const handleRefresh = useCallback(async () => {
-    // Smartlink removed
+    // Smartlink - Open in new tab
+    window.open("https://otieu.com/4/10337286", "_blank");
     queryClient.invalidateQueries({ queryKey: ["data", "ticker", `${selectedTicker}.json`] });
     await refetchFull();
   }, [selectedTicker, refetchFull]);
@@ -476,7 +477,10 @@ export default function Dashboard() {
                 onLearnMore={(key) => {
                   openExplain(key);
                 }}
-              // Smartlink removed from tile click
+                onTileClick={() => {
+                  window.open("https://otieu.com/4/10337286", "_blank");
+                }}
+
               />
               {/* Adsterra Native Banner removed */}
             </div>

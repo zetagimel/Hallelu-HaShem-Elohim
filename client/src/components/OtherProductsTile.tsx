@@ -18,6 +18,17 @@ const PRODUCTS: Product[] = [
         description: "Statistical Market Research Lab",
         url: "https://tradyxa-zetax.pages.dev/",
     },
+    {
+        name: "Tradyxa Aegis Matrix",
+        description: "NIFTY Options Intelligence System",
+        url: "https://tradyxa-betax.pages.dev/",
+    },
+    {
+        name: "Tradyxa Quant Dashboard",
+        description: "AI-Driven NIFTY Options Prediction Lab",
+        url: "https://tradyxa-alephx.pages.dev/",
+    },
+
 ];
 
 export function OtherProductsTile() {
