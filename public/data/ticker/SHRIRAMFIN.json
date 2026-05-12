@@ -1,42 +1,42 @@
 {
   "meta": {
     "ticker": "SHRIRAMFIN",
-    "last_updated": "2026-05-11T13:21:46+00:00",
+    "last_updated": "2026-05-12T12:45:15+00:00",
     "data_source": "yfinance"
   },
   "metrics": {
-    "spot_price": 975.9500122070312,
+    "spot_price": 930.4500122070312,
     "vix_latest": 15.0,
-    "amihud_latest": 5.455863879523138e-12,
-    "lambda_latest": -2.699954163620412e-06,
-    "mfc_latest": 1.2139107350405463e-05,
-    "vol_zscore_latest": -0.1670803228984282,
-    "volatility_latest": 0.02165195860900719,
-    "liquidity_depth_proxy": 0.4112847738631257,
-    "trade_sizing_multiplier": 0.999976298012564,
-    "coordinated_flow": -0.2401167754928451,
+    "amihud_latest": 5.777003797877437e-12,
+    "lambda_latest": -3.83081538017591e-06,
+    "mfc_latest": 1.2443882515725216e-05,
+    "vol_zscore_latest": 0.8940216442015737,
+    "volatility_latest": 0.02255620439168872,
+    "liquidity_depth_proxy": 0.41126331602702765,
+    "trade_sizing_multiplier": 0.9999757029295048,
+    "coordinated_flow": -0.28041027915890915,
     "verdict": {
-      "timestamp": "2026-05-11T13:21:46+00:00",
-      "direction": "NEUTRAL",
-      "points": 0,
-      "error": 10.57,
-      "confidence": 0.27,
-      "score": 0.0477,
+      "timestamp": "2026-05-12T12:45:15+00:00",
+      "direction": "DOWN",
+      "points": 4.85,
+      "error": 10.49,
+      "confidence": 0.54,
+      "score": -0.3081,
       "components": {
-        "momentum": 0.2484,
-        "flow": -0.1195,
-        "liquidity": 0.1774,
-        "impact_cost": -0.4054,
+        "momentum": -0.5202,
+        "flow": -0.1393,
+        "liquidity": 0.1775,
+        "impact_cost": -0.4388,
         "volatility_scale": 0.75,
         "ml_regime_contribution": 0.0,
         "ml_slippage_contribution": 0.0
       },
-      "explanation": "Aggregated momentum + flow produce a mild neutral bias. Recommended: reduce size and wait for better conditions.",
+      "explanation": "Aggregated momentum + flow produce a moderate down bias. Recommended: slice into 3 TWAPs.",
       "data_quality": "GOOD",
       "n_samples": {
-        "slippage": 5268,
-        "monte": 5268,
-        "features": 5268
+        "slippage": 5269,
+        "monte": 5269,
+        "features": 5269
       },
       "ml_enhanced": false,
       "version": "verdict_v1",
@@ -54,21 +54,6 @@
     }
   },
   "features_head": {
-    "2024-05-02T00:00:00": {
-      "Open": 24291.516493335028,
-      "High": 25156.69441914708,
-      "Low": 24263.95416306795,
-      "Close": 24615.982421875,
-      "Volume": 98202,
-      "amihud": 6.470484415493543e-12,
-      "lambda": 0.0006534998451280722,
-      "mfc": 0.026953010517224592,
-      "vol_zscore": 1.5800292921815882,
-      "volatility": 0.009763337440945081,
-      "ret": 0.015641352422802735,
-      "hlc_ratio": 0.03626669213436701,
-      "tod": 0.0
-    },
     "2024-05-03T00:00:00": {
       "Open": 24787.310329948625,
       "High": 25675.4900082948,
@@ -7541,7 +7526,7 @@
     },
     "2026-05-11T00:00:00": {
       "Open": 990.0,
-      "High": 990.8499755859375,
+      "High": 990.8499755859376,
       "Low": 970.4500122070312,
       "Close": 975.9500122070312,
       "Volume": 5926292,
@@ -7551,7 +7536,22 @@
       "vol_zscore": -0.1670803228984282,
       "volatility": 0.02165195860900719,
       "ret": -0.031555433185778914,
-      "hlc_ratio": 0.020902672394842642,
+      "hlc_ratio": 0.020902672394842756,
+      "tod": 0.0
+    },
+    "2026-05-12T00:00:00": {
+      "Open": 971.0,
+      "High": 979.9500122070312,
+      "Low": 925.9500122070312,
+      "Close": 930.4500122070312,
+      "Volume": 8673375,
+      "amihud": 5.777003797877437e-12,
+      "lambda": -3.83081538017591e-06,
+      "mfc": 1.2443882515725216e-05,
+      "vol_zscore": 0.8940216442015737,
+      "volatility": 0.02255620439168872,
+      "ret": -0.04662124025912506,
+      "hlc_ratio": 0.058036433222147826,
       "tod": 0.0
     }
   },
@@ -7678,14 +7678,6 @@
     }
   ],
   "candles": [
-    {
-      "date": "2026-02-09",
-      "open": 1005.0,
-      "high": 1067.8,
-      "low": 1003.4,
-      "close": 1062.7,
-      "volume": 8665169
-    },
     {
       "date": "2026-02-10",
       "open": 1064.9,
@@ -8157,16 +8149,17 @@
       "low": 970.45,
       "close": 975.95,
       "volume": 5926292
+    },
+    {
+      "date": "2026-05-12",
+      "open": 971.0,
+      "high": 979.95,
+      "low": 925.95,
+      "close": 930.45,
+      "volume": 8673375
     }
   ],
   "bollingerBands": [
-    {
-      "date": "2026-02-09",
-      "close": 1062.7,
-      "sma": 3582.05,
-      "upper": 19728.18,
-      "lower": -12564.07
-    },
     {
       "date": "2026-02-10",
       "close": 1048.6,
@@ -8579,16 +8572,16 @@
       "sma": 1000.92,
       "upper": 1068.53,
       "lower": 933.3
+    },
+    {
+      "date": "2026-05-12",
+      "close": 930.45,
+      "sma": 996.06,
+      "upper": 1069.33,
+      "lower": 922.79
     }
   ],
   "rollingAverages": [
-    {
-      "date": "2026-02-09",
-      "close": 1062.7,
-      "ma5": 11485.44,
-      "ma20": 3582.05,
-      "ma50": 10726.57
-    },
     {
       "date": "2026-02-10",
       "close": 1048.6,
@@ -9001,14 +8994,16 @@
       "ma5": 993.57,
       "ma20": 1000.92,
       "ma50": 5306.47
+    },
+    {
+      "date": "2026-05-12",
+      "close": 930.45,
+      "ma5": 986.78,
+      "ma20": 996.06,
+      "ma50": 5303.79
     }
   ],
   "absorptionFlow": [
-    {
-      "date": "2026-02-09",
-      "buyFlow": 6751833,
-      "sellFlow": 1913335
-    },
     {
       "date": "2026-02-10",
       "buyFlow": 1270623,
@@ -9303,284 +9298,289 @@
       "date": "2026-05-11",
       "buyFlow": 1554198,
       "sellFlow": 4372093
+    },
+    {
+      "date": "2026-05-12",
+      "buyFlow": 2166737,
+      "sellFlow": 6506637
     }
   ],
   "heatmap": [
     {
       "hour": 9,
       "dayOfWeek": 0,
-      "value": 17,
-      "count": 5855
+      "value": 19,
+      "count": 5926
     },
     {
       "hour": 10,
       "dayOfWeek": 0,
-      "value": 39,
-      "count": 6963
+      "value": 42,
+      "count": 7097
     },
     {
       "hour": 11,
       "dayOfWeek": 0,
-      "value": 53,
-      "count": 7637
+      "value": 40,
+      "count": 6987
     },
     {
       "hour": 12,
       "dayOfWeek": 0,
-      "value": 50,
-      "count": 7503
+      "value": 58,
+      "count": 7887
     },
     {
       "hour": 13,
       "dayOfWeek": 0,
-      "value": 59,
-      "count": 7946
+      "value": 76,
+      "count": 8819
     },
     {
       "hour": 14,
       "dayOfWeek": 0,
-      "value": 52,
-      "count": 7583
+      "value": 56,
+      "count": 7782
     },
     {
       "hour": 15,
       "dayOfWeek": 0,
-      "value": 66,
-      "count": 8321
+      "value": 51,
+      "count": 7565
     },
     {
       "hour": 16,
       "dayOfWeek": 0,
-      "value": 41,
-      "count": 7050
+      "value": 40,
+      "count": 7016
     },
     {
       "hour": 17,
       "dayOfWeek": 0,
-      "value": 24,
-      "count": 6176
+      "value": 27,
+      "count": 6331
     },
     {
       "hour": 9,
       "dayOfWeek": 1,
-      "value": 27,
-      "count": 6333
+      "value": 26,
+      "count": 6292
     },
     {
       "hour": 10,
       "dayOfWeek": 1,
-      "value": 38,
-      "count": 6897
+      "value": 43,
+      "count": 7157
     },
     {
       "hour": 11,
       "dayOfWeek": 1,
-      "value": 54,
-      "count": 7708
+      "value": 42,
+      "count": 7121
     },
     {
       "hour": 12,
       "dayOfWeek": 1,
-      "value": 58,
-      "count": 7911
+      "value": 55,
+      "count": 7739
     },
     {
       "hour": 13,
       "dayOfWeek": 1,
-      "value": 80,
-      "count": 8996
+      "value": 78,
+      "count": 8886
     },
     {
       "hour": 14,
       "dayOfWeek": 1,
-      "value": 66,
-      "count": 8300
+      "value": 67,
+      "count": 8338
     },
     {
       "hour": 15,
       "dayOfWeek": 1,
       "value": 69,
-      "count": 8446
+      "count": 8448
     },
     {
       "hour": 16,
       "dayOfWeek": 1,
-      "value": 51,
-      "count": 7532
+      "value": 46,
+      "count": 7279
     },
     {
       "hour": 17,
       "dayOfWeek": 1,
-      "value": 33,
-      "count": 6643
+      "value": 26,
+      "count": 6319
     },
     {
       "hour": 9,
       "dayOfWeek": 2,
       "value": 22,
-      "count": 6075
+      "count": 6081
     },
     {
       "hour": 10,
       "dayOfWeek": 2,
-      "value": 48,
-      "count": 7398
+      "value": 36,
+      "count": 6824
     },
     {
       "hour": 11,
       "dayOfWeek": 2,
-      "value": 52,
-      "count": 7614
+      "value": 53,
+      "count": 7632
     },
     {
       "hour": 12,
       "dayOfWeek": 2,
-      "value": 75,
-      "count": 8740
+      "value": 70,
+      "count": 8509
     },
     {
       "hour": 13,
       "dayOfWeek": 2,
-      "value": 75,
-      "count": 8731
+      "value": 65,
+      "count": 8225
     },
     {
       "hour": 14,
       "dayOfWeek": 2,
-      "value": 61,
-      "count": 8055
+      "value": 85,
+      "count": 9271
     },
     {
       "hour": 15,
       "dayOfWeek": 2,
-      "value": 64,
-      "count": 8189
+      "value": 70,
+      "count": 8515
     },
     {
       "hour": 16,
       "dayOfWeek": 2,
-      "value": 55,
-      "count": 7735
-    },
-    {
-      "hour": 17,
-      "dayOfWeek": 2,
-      "value": 38,
-      "count": 6902
-    },
-    {
-      "hour": 9,
-      "dayOfWeek": 3,
-      "value": 21,
-      "count": 6028
-    },
-    {
-      "hour": 10,
-      "dayOfWeek": 3,
-      "value": 38,
-      "count": 6882
-    },
-    {
-      "hour": 11,
-      "dayOfWeek": 3,
-      "value": 63,
-      "count": 8160
-    },
-    {
-      "hour": 12,
-      "dayOfWeek": 3,
-      "value": 67,
-      "count": 8325
-    },
-    {
-      "hour": 13,
-      "dayOfWeek": 3,
-      "value": 97,
-      "count": 9865
-    },
-    {
-      "hour": 14,
-      "dayOfWeek": 3,
-      "value": 73,
-      "count": 8652
-    },
-    {
-      "hour": 15,
-      "dayOfWeek": 3,
-      "value": 81,
-      "count": 9053
-    },
-    {
-      "hour": 16,
-      "dayOfWeek": 3,
       "value": 54,
-      "count": 7680
+      "count": 7721
+    },
+    {
+      "hour": 17,
+      "dayOfWeek": 2,
+      "value": 35,
+      "count": 6755
+    },
+    {
+      "hour": 9,
+      "dayOfWeek": 3,
+      "value": 27,
+      "count": 6352
+    },
+    {
+      "hour": 10,
+      "dayOfWeek": 3,
+      "value": 34,
+      "count": 6700
+    },
+    {
+      "hour": 11,
+      "dayOfWeek": 3,
+      "value": 60,
+      "count": 8007
+    },
+    {
+      "hour": 12,
+      "dayOfWeek": 3,
+      "value": 57,
+      "count": 7831
+    },
+    {
+      "hour": 13,
+      "dayOfWeek": 3,
+      "value": 92,
+      "count": 9609
+    },
+    {
+      "hour": 14,
+      "dayOfWeek": 3,
+      "value": 74,
+      "count": 8678
+    },
+    {
+      "hour": 15,
+      "dayOfWeek": 3,
+      "value": 71,
+      "count": 8548
+    },
+    {
+      "hour": 16,
+      "dayOfWeek": 3,
+      "value": 46,
+      "count": 7312
     },
     {
       "hour": 17,
       "dayOfWeek": 3,
-      "value": 37,
-      "count": 6838
+      "value": 33,
+      "count": 6625
     },
     {
       "hour": 9,
       "dayOfWeek": 4,
-      "value": 31,
-      "count": 6553
+      "value": 28,
+      "count": 6413
     },
     {
       "hour": 10,
       "dayOfWeek": 4,
-      "value": 45,
-      "count": 7253
+      "value": 51,
+      "count": 7543
     },
     {
       "hour": 11,
       "dayOfWeek": 4,
-      "value": 76,
-      "count": 8801
+      "value": 59,
+      "count": 7954
     },
     {
       "hour": 12,
       "dayOfWeek": 4,
-      "value": 71,
-      "count": 8528
+      "value": 68,
+      "count": 8382
     },
     {
       "hour": 13,
       "dayOfWeek": 4,
-      "value": 115,
-      "count": 10757
+      "value": 112,
+      "count": 10582
     },
     {
       "hour": 14,
       "dayOfWeek": 4,
-      "value": 73,
-      "count": 8671
+      "value": 94,
+      "count": 9690
     },
     {
       "hour": 15,
       "dayOfWeek": 4,
-      "value": 80,
-      "count": 9002
+      "value": 88,
+      "count": 9380
     },
     {
       "hour": 16,
       "dayOfWeek": 4,
-      "value": 62,
-      "count": 8077
+      "value": 55,
+      "count": 7732
     },
     {
       "hour": 17,
       "dayOfWeek": 4,
-      "value": 42,
-      "count": 7088
+      "value": 44,
+      "count": 7178
     }
   ],
   "histogram": [
     {
       "bin": 78.66,
-      "count": 5261,
+      "count": 5262,
       "percentage": 99.9
     },
     {
@@ -9621,354 +9621,354 @@
   ],
   "slippageSamples": [
     {
+      "timestamp": "2026-01-09",
+      "expected": 975.4,
+      "actual": 976.18,
+      "slippage": 0.08,
+      "volume": 6949168
+    },
+    {
+      "timestamp": "2026-04-20",
+      "expected": 1045.15,
+      "actual": 1046.11,
+      "slippage": 0.092,
+      "volume": 4670588
+    },
+    {
+      "timestamp": "2026-01-06",
+      "expected": 27670.0,
+      "actual": 27721.46,
+      "slippage": 0.186,
+      "volume": 35574
+    },
+    {
       "timestamp": "2026-01-01",
       "expected": 2539.0,
-      "actual": 2543.37,
+      "actual": 2543.35,
       "slippage": 0.172,
       "volume": 203170
     },
     {
-      "timestamp": "2026-02-23",
-      "expected": 1064.7,
-      "actual": 1066.03,
-      "slippage": 0.125,
-      "volume": 2423645
-    },
-    {
-      "timestamp": "2026-04-07",
-      "expected": 930.65,
-      "actual": 931.21,
-      "slippage": 0.06,
-      "volume": 5503677
-    },
-    {
-      "timestamp": "2025-12-29",
-      "expected": 955.5,
-      "actual": 956.06,
-      "slippage": 0.058,
-      "volume": 4897570
-    },
-    {
-      "timestamp": "2026-05-04",
-      "expected": 960.45,
-      "actual": 961.21,
+      "timestamp": "2026-04-02",
+      "expected": 891.6,
+      "actual": 892.3,
       "slippage": 0.079,
-      "volume": 4017548
+      "volume": 7230236
     },
     {
-      "timestamp": "2025-12-19",
-      "expected": 901.7,
-      "actual": 901.95,
-      "slippage": 0.027,
-      "volume": 35295633
-    },
-    {
-      "timestamp": "2026-04-24",
-      "expected": 1011.3,
-      "actual": 1011.65,
-      "slippage": 0.035,
-      "volume": 9262687
-    },
-    {
-      "timestamp": "2026-04-09",
-      "expected": 996.3,
-      "actual": 996.75,
-      "slippage": 0.045,
-      "volume": 7668209
-    },
-    {
-      "timestamp": "2026-01-08",
-      "expected": 992.9,
-      "actual": 993.71,
-      "slippage": 0.082,
-      "volume": 3804564
-    },
-    {
-      "timestamp": "2026-01-07",
-      "expected": 27320.0,
-      "actual": 27369.79,
-      "slippage": 0.182,
-      "volume": 22391
-    },
-    {
-      "timestamp": "2026-04-24",
-      "expected": 1011.3,
-      "actual": 1012.08,
-      "slippage": 0.078,
-      "volume": 9262687
-    },
-    {
-      "timestamp": "2026-02-23",
-      "expected": 1064.7,
-      "actual": 1065.67,
-      "slippage": 0.091,
-      "volume": 2423645
+      "timestamp": "2026-02-04",
+      "expected": 27350.0,
+      "actual": 27407.18,
+      "slippage": 0.209,
+      "volume": 25807
     },
     {
       "timestamp": "2026-03-24",
       "expected": 903.6,
-      "actual": 903.83,
-      "slippage": 0.025,
+      "actual": 904.02,
+      "slippage": 0.046,
       "volume": 13359073
     },
     {
-      "timestamp": "2026-01-14",
-      "expected": 622.15,
-      "actual": 623.35,
-      "slippage": 0.193,
-      "volume": 117202
+      "timestamp": "2026-04-20",
+      "expected": 1045.15,
+      "actual": 1046.21,
+      "slippage": 0.101,
+      "volume": 4670588
     },
     {
-      "timestamp": "2026-02-10",
-      "expected": 1048.6,
-      "actual": 1049.48,
-      "slippage": 0.084,
-      "volume": 4345362
+      "timestamp": "2026-03-19",
+      "expected": 949.8,
+      "actual": 950.59,
+      "slippage": 0.083,
+      "volume": 11956347
     },
     {
-      "timestamp": "2026-01-01",
-      "expected": 2539.0,
-      "actual": 2544.28,
-      "slippage": 0.208,
-      "volume": 203170
-    },
-    {
-      "timestamp": "2026-04-01",
-      "expected": 23265.0,
-      "actual": 23317.05,
-      "slippage": 0.224,
-      "volume": 19991
-    },
-    {
-      "timestamp": "2026-01-29",
-      "expected": 1022.8,
-      "actual": 1023.55,
-      "slippage": 0.073,
-      "volume": 6653688
+      "timestamp": "2026-05-06",
+      "expected": 1004.1,
+      "actual": 1004.75,
+      "slippage": 0.064,
+      "volume": 5858455
     },
     {
       "timestamp": "2025-12-23",
       "expected": 957.8,
-      "actual": 958.24,
-      "slippage": 0.046,
+      "actual": 958.16,
+      "slippage": 0.038,
       "volume": 14632455
+    },
+    {
+      "timestamp": "2026-02-25",
+      "expected": 26865.0,
+      "actual": 26920.0,
+      "slippage": 0.205,
+      "volume": 16889
+    },
+    {
+      "timestamp": "2026-02-16",
+      "expected": 1085.4,
+      "actual": 1086.0,
+      "slippage": 0.056,
+      "volume": 5096455
+    },
+    {
+      "timestamp": "2026-04-20",
+      "expected": 1045.15,
+      "actual": 1046.23,
+      "slippage": 0.104,
+      "volume": 4670588
+    },
+    {
+      "timestamp": "2025-12-18",
+      "expected": 869.45,
+      "actual": 869.67,
+      "slippage": 0.026,
+      "volume": 12481529
+    },
+    {
+      "timestamp": "2026-03-11",
+      "expected": 1031.7,
+      "actual": 1031.7,
+      "slippage": 0,
+      "volume": 10731002
     },
     {
       "timestamp": "2026-04-10",
       "expected": 1027.55,
-      "actual": 1028.3,
-      "slippage": 0.073,
+      "actual": 1028.18,
+      "slippage": 0.061,
       "volume": 8048034
     },
     {
-      "timestamp": "2025-12-22",
-      "expected": 936.35,
-      "actual": 936.92,
-      "slippage": 0.061,
-      "volume": 14133264
+      "timestamp": "2026-03-10",
+      "expected": 1062.9,
+      "actual": 1063.48,
+      "slippage": 0.054,
+      "volume": 14297519
     },
     {
-      "timestamp": "2026-03-17",
-      "expected": 1004.6,
-      "actual": 1005.37,
-      "slippage": 0.077,
-      "volume": 4175225
+      "timestamp": "2026-03-13",
+      "expected": 22965.0,
+      "actual": 23015.75,
+      "slippage": 0.221,
+      "volume": 48594
     },
     {
-      "timestamp": "2026-02-02",
-      "expected": 962.1,
-      "actual": 962.15,
-      "slippage": 0.005,
-      "volume": 13566007
+      "timestamp": "2026-01-13",
+      "expected": 629.0,
+      "actual": 630.17,
+      "slippage": 0.187,
+      "volume": 214487
     },
     {
-      "timestamp": "2025-12-31",
-      "expected": 996.2,
-      "actual": 997.01,
-      "slippage": 0.082,
-      "volume": 9795164
+      "timestamp": "2026-03-24",
+      "expected": 903.6,
+      "actual": 903.76,
+      "slippage": 0.018,
+      "volume": 13359073
     },
     {
-      "timestamp": "2026-04-30",
-      "expected": 937.35,
-      "actual": 937.83,
-      "slippage": 0.051,
-      "volume": 5988519
+      "timestamp": "2026-05-12",
+      "expected": 930.45,
+      "actual": 930.67,
+      "slippage": 0.024,
+      "volume": 8673375
     },
     {
-      "timestamp": "2026-01-28",
-      "expected": 1018.8,
-      "actual": 1019.71,
-      "slippage": 0.089,
-      "volume": 5587231
-    },
-    {
-      "timestamp": "2026-02-18",
-      "expected": 1076.2,
-      "actual": 1077.31,
-      "slippage": 0.103,
-      "volume": 2470593
-    },
-    {
-      "timestamp": "2026-02-05",
-      "expected": 992.0,
-      "actual": 992.81,
-      "slippage": 0.082,
-      "volume": 5775866
-    },
-    {
-      "timestamp": "2026-01-30",
-      "expected": 1020.0,
-      "actual": 1020.54,
-      "slippage": 0.053,
-      "volume": 6464610
-    },
-    {
-      "timestamp": "2026-04-21",
-      "expected": 1045.3,
-      "actual": 1045.95,
-      "slippage": 0.062,
-      "volume": 5699181
-    },
-    {
-      "timestamp": "2026-01-23",
-      "expected": 1005.0,
-      "actual": 1005.37,
-      "slippage": 0.037,
-      "volume": 9023942
-    },
-    {
-      "timestamp": "2026-04-15",
-      "expected": 1020.95,
-      "actual": 1021.52,
-      "slippage": 0.056,
-      "volume": 7867063
-    },
-    {
-      "timestamp": "2026-04-24",
-      "expected": 1011.3,
-      "actual": 1011.82,
-      "slippage": 0.051,
-      "volume": 9262687
-    },
-    {
-      "timestamp": "2026-01-22",
-      "expected": 1005.5,
-      "actual": 1006.05,
-      "slippage": 0.055,
-      "volume": 7210572
-    },
-    {
-      "timestamp": "2026-05-05",
-      "expected": 964.4,
-      "actual": 965.39,
-      "slippage": 0.103,
-      "volume": 4028848
+      "timestamp": "2026-04-02",
+      "expected": 891.6,
+      "actual": 892.44,
+      "slippage": 0.094,
+      "volume": 7230236
     },
     {
       "timestamp": "2025-12-12",
       "expected": 26285.0,
-      "actual": 26333.38,
-      "slippage": 0.184,
+      "actual": 26337.33,
+      "slippage": 0.199,
       "volume": 23933
     },
     {
-      "timestamp": "2025-12-31",
-      "expected": 996.2,
-      "actual": 996.81,
-      "slippage": 0.062,
-      "volume": 9795164
+      "timestamp": "2026-01-27",
+      "expected": 1001.05,
+      "actual": 1001.38,
+      "slippage": 0.033,
+      "volume": 7984025
     },
     {
-      "timestamp": "2026-04-09",
-      "expected": 996.3,
-      "actual": 996.81,
-      "slippage": 0.051,
-      "volume": 7668209
+      "timestamp": "2025-12-17",
+      "expected": 26045.0,
+      "actual": 26092.06,
+      "slippage": 0.181,
+      "volume": 64316
     },
     {
-      "timestamp": "2026-04-20",
-      "expected": 1045.15,
-      "actual": 1045.93,
-      "slippage": 0.075,
-      "volume": 4670588
+      "timestamp": "2026-04-06",
+      "expected": 928.0,
+      "actual": 928.76,
+      "slippage": 0.082,
+      "volume": 5896091
     },
     {
-      "timestamp": "2026-04-20",
-      "expected": 1045.15,
-      "actual": 1045.9,
-      "slippage": 0.071,
-      "volume": 4670588
+      "timestamp": "2026-03-04",
+      "expected": 1010.0,
+      "actual": 1010.0,
+      "slippage": 0,
+      "volume": 9200623
     },
     {
-      "timestamp": "2026-04-01",
-      "expected": 23265.0,
-      "actual": 23315.2,
-      "slippage": 0.216,
-      "volume": 19991
+      "timestamp": "2026-04-10",
+      "expected": 1027.55,
+      "actual": 1027.88,
+      "slippage": 0.032,
+      "volume": 8048034
     },
     {
-      "timestamp": "2026-01-01",
-      "expected": 2539.0,
-      "actual": 2543.86,
-      "slippage": 0.192,
-      "volume": 203170
+      "timestamp": "2026-02-26",
+      "expected": 26745.0,
+      "actual": 26806.56,
+      "slippage": 0.23,
+      "volume": 12433
     },
     {
-      "timestamp": "2025-12-23",
-      "expected": 957.8,
-      "actual": 958.67,
-      "slippage": 0.091,
-      "volume": 14632455
-    },
-    {
-      "timestamp": "2026-03-30",
-      "expected": 872.1,
-      "actual": 872.78,
-      "slippage": 0.078,
-      "volume": 10939758
-    },
-    {
-      "timestamp": "2026-01-22",
-      "expected": 1005.5,
-      "actual": 1005.93,
-      "slippage": 0.043,
-      "volume": 7210572
+      "timestamp": "2026-01-09",
+      "expected": 975.4,
+      "actual": 976.19,
+      "slippage": 0.081,
+      "volume": 6949168
     },
     {
       "timestamp": "2026-01-28",
       "expected": 1018.8,
-      "actual": 1019.46,
-      "slippage": 0.065,
+      "actual": 1019.59,
+      "slippage": 0.078,
       "volume": 5587231
     },
     {
-      "timestamp": "2025-12-30",
-      "expected": 979.4,
-      "actual": 979.62,
-      "slippage": 0.023,
-      "volume": 17757531
-    },
-    {
-      "timestamp": "2026-04-17",
-      "expected": 1036.95,
-      "actual": 1037.85,
-      "slippage": 0.087,
-      "volume": 4345291
+      "timestamp": "2025-12-12",
+      "expected": 26285.0,
+      "actual": 26341.67,
+      "slippage": 0.216,
+      "volume": 23933
     },
     {
       "timestamp": "2026-01-20",
       "expected": 987.5,
-      "actual": 988.21,
-      "slippage": 0.072,
+      "actual": 988.54,
+      "slippage": 0.105,
       "volume": 6129218
     },
     {
-      "timestamp": "2026-03-06",
-      "expected": 1007.5,
-      "actual": 1007.94,
+      "timestamp": "2025-12-22",
+      "expected": 936.35,
+      "actual": 936.8,
+      "slippage": 0.048,
+      "volume": 14133264
+    },
+    {
+      "timestamp": "2026-05-12",
+      "expected": 930.45,
+      "actual": 930.85,
       "slippage": 0.043,
-      "volume": 8166542
+      "volume": 8673375
+    },
+    {
+      "timestamp": "2026-03-25",
+      "expected": 956.0,
+      "actual": 956.3,
+      "slippage": 0.031,
+      "volume": 14264965
+    },
+    {
+      "timestamp": "2026-02-06",
+      "expected": 1002.5,
+      "actual": 1003.63,
+      "slippage": 0.113,
+      "volume": 3270421
+    },
+    {
+      "timestamp": "2026-03-09",
+      "expected": 987.2,
+      "actual": 987.55,
+      "slippage": 0.036,
+      "volume": 11998058
+    },
+    {
+      "timestamp": "2026-01-19",
+      "expected": 1010.35,
+      "actual": 1010.93,
+      "slippage": 0.058,
+      "volume": 4908394
+    },
+    {
+      "timestamp": "2025-12-31",
+      "expected": 996.2,
+      "actual": 996.33,
+      "slippage": 0.013,
+      "volume": 9795164
+    },
+    {
+      "timestamp": "2025-12-18",
+      "expected": 869.45,
+      "actual": 869.76,
+      "slippage": 0.036,
+      "volume": 12481529
+    },
+    {
+      "timestamp": "2026-03-24",
+      "expected": 903.6,
+      "actual": 904.05,
+      "slippage": 0.05,
+      "volume": 13359073
+    },
+    {
+      "timestamp": "2026-03-11",
+      "expected": 1031.7,
+      "actual": 1032.0,
+      "slippage": 0.029,
+      "volume": 10731002
+    },
+    {
+      "timestamp": "2026-04-07",
+      "expected": 930.65,
+      "actual": 931.53,
+      "slippage": 0.095,
+      "volume": 5503677
+    },
+    {
+      "timestamp": "2026-03-09",
+      "expected": 987.2,
+      "actual": 987.51,
+      "slippage": 0.032,
+      "volume": 11998058
+    },
+    {
+      "timestamp": "2026-05-08",
+      "expected": 1007.75,
+      "actual": 1008.36,
+      "slippage": 0.061,
+      "volume": 5754888
+    },
+    {
+      "timestamp": "2026-03-30",
+      "expected": 872.1,
+      "actual": 872.51,
+      "slippage": 0.047,
+      "volume": 10939758
+    },
+    {
+      "timestamp": "2026-03-10",
+      "expected": 1062.9,
+      "actual": 1063.78,
+      "slippage": 0.083,
+      "volume": 14297519
+    },
+    {
+      "timestamp": "2026-04-21",
+      "expected": 1045.3,
+      "actual": 1046.33,
+      "slippage": 0.099,
+      "volume": 5699181
     }
   ],
   "timelineEvents": [
@@ -9981,54 +9981,54 @@
   ],
   "orderbook": [
     {
-      "price": 975.46,
-      "bidQty": 4399,
+      "price": 929.98,
+      "bidQty": 5531,
       "askQty": 0
     },
     {
-      "price": 976.44,
+      "price": 930.92,
       "bidQty": 0,
-      "askQty": 4235
+      "askQty": 4117
     },
     {
-      "price": 974.97,
-      "bidQty": 3896,
+      "price": 929.52,
+      "bidQty": 3319,
       "askQty": 0
     },
     {
-      "price": 976.93,
+      "price": 931.38,
       "bidQty": 0,
-      "askQty": 4634
+      "askQty": 4100
     },
     {
-      "price": 974.49,
-      "bidQty": 2535,
+      "price": 929.05,
+      "bidQty": 3505,
       "askQty": 0
     },
     {
-      "price": 977.41,
+      "price": 931.85,
       "bidQty": 0,
-      "askQty": 2740
+      "askQty": 2952
     },
     {
-      "price": 974.0,
-      "bidQty": 2266,
+      "price": 928.59,
+      "bidQty": 2242,
       "askQty": 0
     },
     {
-      "price": 977.9,
+      "price": 932.31,
       "bidQty": 0,
-      "askQty": 1828
+      "askQty": 1793
     },
     {
-      "price": 973.51,
-      "bidQty": 820,
+      "price": 928.12,
+      "bidQty": 968,
       "askQty": 0
     },
     {
-      "price": 978.39,
+      "price": 932.78,
       "bidQty": 0,
-      "askQty": 1079
+      "askQty": 965
     }
   ]
 }
